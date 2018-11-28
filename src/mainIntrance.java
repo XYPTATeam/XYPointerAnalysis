@@ -1,11 +1,11 @@
-import soot.*;
-import soot.jimple.spark.SparkTransformer;
+import soot.PackManager;
+import soot.Transform;
 
 import java.io.File;
-import java.util.HashMap;
+
 public class mainIntrance {
-    public static void main(String[] args){
-        String classpath = args[0]  + "rt.jar" + File.pathSeparator
+    public static void main(String[] args) {
+        String classpath = args[0] + "rt.jar" + File.pathSeparator
                 + args[0] + "jce.jar" + File.pathSeparator
                 + args[1];
         System.out.println(args[0]);

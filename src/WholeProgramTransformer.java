@@ -1,4 +1,3 @@
-import org.jboss.util.Null;
 import soot.*;
 import soot.jimple.*;
 import soot.jimple.toolkits.callgraph.ReachableMethods;
