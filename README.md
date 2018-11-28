@@ -1,6 +1,6 @@
 # XYPointerAnalysis
 
-> Authors: Dexin Liu && Peiyi Sun
+> Authors: Peiyi Sun && Dexin Liu
 
 ## Intro
 
