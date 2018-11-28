@@ -3,7 +3,7 @@ import soot.Transform;
 
 import java.io.File;
 
-public class mainIntrance {
+public class MainEntrance {
     public static void main(String[] args) {
         String classpath = args[0] + "rt.jar" + File.pathSeparator
                 + args[0] + "jce.jar" + File.pathSeparator

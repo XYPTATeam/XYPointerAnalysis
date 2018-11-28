@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d544b044-7bed-4b62-a481-e5fa3df5da58" name="Default Changelist" comment="Format code and imports.">
-      <change afterPath="$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar" afterDir="false" />
+    <list id="cc21e37d-3c42-41d0-a204-76a9994bda50" name="TempLog" comment="" />
+    <list default="true" id="d544b044-7bed-4b62-a481-e5fa3df5da58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/sootclasses-trunk-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sootclasses-trunk-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jce.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainIntrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainEntrance.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mainIntrance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mainIntrance.java">
+      <file leaf-file-name="MainEntrance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MainEntrance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="273">
+              <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hello.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Hello.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/Hello.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
@@ -52,20 +54,11 @@
       <file leaf-file-name="WholeProgramTransformer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WholeProgramTransformer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="32" column="78" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="78" />
+            <state relative-caret-position="666">
+              <caret line="42" column="60" lean-forward="true" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SootMethodRefImpl.java" pinned="false" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/SootMethodRefImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3486">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -91,8 +84,8 @@
       <file leaf-file-name="AnswerPrinter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AnswerPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="378">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,12 +117,13 @@
         <option value="$PROJECT_DIR$/test/A.java" />
         <option value="$PROJECT_DIR$/src/Hello.java" />
         <option value="$PROJECT_DIR$/test/Hello.java" />
-        <option value="$PROJECT_DIR$/src/WholeProgramTransformer.java" />
         <option value="$PROJECT_DIR$/test/FieldSensitivity.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/AnswerPrinter.java" />
         <option value="$PROJECT_DIR$/src/Anderson.java" />
         <option value="$PROJECT_DIR$/src/mainIntrance.java" />
+        <option value="$PROJECT_DIR$/src/MainEntrance.java" />
+        <option value="$PROJECT_DIR$/src/WholeProgramTransformer.java" />
       </list>
     </option>
   </component>
@@ -171,12 +165,6 @@
             <path>
               <item name="XYPointerAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="XYPointerAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Anderson.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="XYPointerAnalysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="XYPointerAnalysis" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -210,14 +198,14 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="mainIntrance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mainIntrance" />
+    <configuration name="MainEntrance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainEntrance" />
       <module name="XYPointerAnalysis" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\spy\IdeaProjects\XYPointerAnalysis\lib\ C:\Users\spy\IdeaProjects\XYPointerAnalysis\out\production\XYPointerAnalysis\ FieldSensitivity" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.mainIntrance" />
+        <item itemvalue="Application.MainEntrance" />
       </list>
     </recent_temporary>
   </component>
@@ -227,13 +215,14 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d544b044-7bed-4b62-a481-e5fa3df5da58" name="Default Changelist" comment="" />
+      <changelist id="cc21e37d-3c42-41d0-a204-76a9994bda50" name="TempLog" comment="" />
       <created>1543284651549</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543284651549</updated>
       <workItem from="1543284655338" duration="6986000" />
       <workItem from="1543295434790" duration="6944000" />
-      <workItem from="1543368357280" duration="867000" />
+      <workItem from="1543368357280" duration="1929000" />
     </task>
     <task id="LOCAL-00001" summary="Remove unversioned files from git. Add gitignore.">
       <created>1543368659023</created>
@@ -249,15 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543368913676</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update soot dependence.">
+      <created>1543369256482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543369256482</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14797000" />
+    <option name="totallyTimeSpent" value="15859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -300,10 +295,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove unversioned files from git. Add gitignore." />
     <MESSAGE value="Format code and imports." />
-    <option name="LAST_COMMIT_MESSAGE" value="Format code and imports." />
+    <MESSAGE value="Update soot dependence." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update soot dependence." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/mainIntrance.java">
+    <entry file="file://$PROJECT_DIR$/src/MainEntrance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -381,30 +377,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnswerPrinter.java">
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-jar-with-dependencies.jar!/soot/SootMethodRefImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="247">
+          <caret line="285" column="17" selection-start-line="285" selection-start-column="17" selection-end-line="285" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Hello.java">
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/SootMethodRefImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-3486">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/FieldSensitivity.java">
+    <entry file="file://$PROJECT_DIR$/src/MainEntrance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="273">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -424,37 +417,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mainIntrance.java">
+    <entry file="file://$PROJECT_DIR$/src/AnswerPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="378">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/FieldSensitivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WholeProgramTransformer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="32" column="78" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="78" />
+        <state relative-caret-position="666">
+          <caret line="42" column="60" lean-forward="true" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-jar-with-dependencies.jar!/soot/SootMethodRefImpl.class">
+    <entry file="file://$PROJECT_DIR$/test/Hello.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="285" column="17" selection-start-line="285" selection-start-column="17" selection-end-line="285" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/SootMethodRefImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3486">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="273">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -475,7 +471,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
