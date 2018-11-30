@@ -1,6 +1,6 @@
-package annoatedAndersonAnalysis.constraintGraphNode;
+package annotatedAndersonAnalysis.constraintGraphNode;
 
-import annoatedAndersonAnalysis.ConstraintAnnotation;
+import annotatedAndersonAnalysis.ConstraintAnnotation;
 
 import java.util.HashMap;
 import java.util.HashSet;

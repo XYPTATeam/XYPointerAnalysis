@@ -1,4 +1,4 @@
-package annoatedAndersonAnalysis;
+package annotatedAndersonAnalysis;
 
 import java.util.Objects;
 

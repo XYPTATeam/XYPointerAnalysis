@@ -1,4 +1,4 @@
-package annoatedAndersonAnalysis.constraintGraphNode;
+package annotatedAndersonAnalysis.constraintGraphNode;
 
 public class ConstraintLambdaConstructor extends ConstraintConstructor {
 }
