@@ -1,5 +1,5 @@
-import annotatedAndersonAnalysis.ConstraintConvertUtility;
-import annotatedAndersonAnalysis.ConstraintGraph;
+import annotated_anderson_analysis.ConstraintConvertUtility;
+import annotated_anderson_analysis.ConstraintGraph;
 import soot.*;
 import soot.jimple.DefinitionStmt;
 import soot.jimple.IntConstant;
@@ -40,7 +40,7 @@ public class PointerAnalysisTransformer extends SceneTransformer {
                     }
                     if (u instanceof DefinitionStmt) {
                         DefinitionStmt du = (DefinitionStmt) u;
-                        ConstraintConvertUtility.convertFromDefinitionStmt(du, constraintGraph);
+                        ConstraintConvertUtility.convertFromDefinitionStmt(du, allocID, constraintGraph);
                     }
                 }
             }
