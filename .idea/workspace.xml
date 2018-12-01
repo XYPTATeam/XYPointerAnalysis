@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="cc21e37d-3c42-41d0-a204-76a9994bda50" name="TempLog" comment="" />
-    <list default="true" id="d544b044-7bed-4b62-a481-e5fa3df5da58" name="Default Changelist" comment="">
+    <list default="true" id="d544b044-7bed-4b62-a481-e5fa3df5da58" name="Default Changelist" comment="Rename package.">
+      <change afterPath="$PROJECT_DIR$/src/main/PointerAnalysisTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintConvertUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jce.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rt.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainIntrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainEntrance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XYPointerAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/XYPointerAnalysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Anderson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/deprecated/Anderson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/deprecated/AnswerPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainEntrance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainEntrance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WholeProgramTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/deprecated/WholeProgramTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/annotatedAndersonAnalysis/ConstraintAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/annotatedAndersonAnalysis/ConstraintConvertUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/annotatedAndersonAnalysis/ConstraintGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/annotatedAndersonAnalysis/constraintGraphNode/BasicConstraintGraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/BasicConstraintGraphNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/annotatedAndersonAnalysis/constraintGraphNode/ConstraintConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/annotatedAndersonAnalysis/constraintGraphNode/ConstraintLambdaConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintLambdaConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/annotatedAndersonAnalysis/constraintGraphNode/ConstraintObjectConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintObjectConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/annotatedAndersonAnalysis/constraintGraphNode/ConstraintVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintVariable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FieldSensitivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/FieldSensitivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/benchmark/internal/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/benchmark/internal/Benchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/benchmark/objects/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/benchmark/objects/A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/benchmark/objects/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/benchmark/objects/B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/cfg/cfgTest.java" beforeDir="false" />
     </list>
+    <list id="cc21e37d-3c42-41d0-a204-76a9994bda50" name="TempLog" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,83 +35,145 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainEntrance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainEntrance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FieldSensitivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/FieldSensitivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hello.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/Hello.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WholeProgramTransformer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WholeProgramTransformer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="42" column="60" lean-forward="true" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Anderson.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Anderson.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#1371#1372#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnswerPrinter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AnswerPrinter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="MainEntrance.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/MainEntrance.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FieldSensitivity.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/resources/FieldSensitivity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="21">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="A.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/resources/benchmark/objects/A.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="399">
+                  <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#236#237#0" expanded="true" />
+                    <element signature="e#251#252#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="B.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/resources/benchmark/objects/B.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="42">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Benchmark.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/resources/benchmark/internal/Benchmark.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="63">
+                  <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Hello.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/resources/Hello.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PointerAnalysisTransformer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/PointerAnalysisTransformer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="236">
+                  <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ConstraintConvertUtility.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintConvertUtility.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="84">
+                  <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AnswerPrinter.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/deprecated/AnswerPrinter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="147">
+                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ConstraintAnnotation.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintAnnotation.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="126">
+                  <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="WholeProgramTransformer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/deprecated/WholeProgramTransformer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="231">
+                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Anderson.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/deprecated/Anderson.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="147">
+                  <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -105,7 +185,18 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>queries</find>
+      <find>graphviz</find>
+      <find>print_cfg</find>
+      <find>drawCFG</find>
+      <find>pred</find>
+      <find>package main.</find>
     </findStrings>
+    <replaceStrings>
+      <replace>succ</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Ubuntu_Share\XYPointerAnalysis</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/A.java" />
         <option value="$PROJECT_DIR$/test/A.java" />
         <option value="$PROJECT_DIR$/src/Hello.java" />
-        <option value="$PROJECT_DIR$/test/Hello.java" />
         <option value="$PROJECT_DIR$/test/FieldSensitivity.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/AnswerPrinter.java" />
@@ -124,6 +214,40 @@
         <option value="$PROJECT_DIR$/src/mainIntrance.java" />
         <option value="$PROJECT_DIR$/src/MainEntrance.java" />
         <option value="$PROJECT_DIR$/src/WholeProgramTransformer.java" />
+        <option value="$PROJECT_DIR$/test/Hello.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/ConstraintProjection.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/ConstraintObject.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/ConstraintAnnoation.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/t.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/BasicConstraintGraphNode.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/ConstraintConstructor.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/ConstraintLambdaConstructor.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/ConstraintAnnotation.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/ConstraintAnnotation.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/ConstraintVariable.java" />
+        <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/ConstraintGraph.java" />
+        <option value="$PROJECT_DIR$/src/annotatedAndersonAnalysis/constraintGraphNode/ConstraintLambdaConstructor.java" />
+        <option value="$PROJECT_DIR$/src/annotatedAndersonAnalysis/ConstraintAnnotation.java" />
+        <option value="$PROJECT_DIR$/src/annotatedAndersonAnalysis/ConstraintGraph.java" />
+        <option value="$PROJECT_DIR$/test/cfg/cfgTest.java" />
+        <option value="$PROJECT_DIR$/src/annotatedAndersonAnalysis/ConstraintConvertUtility.java" />
+        <option value="$PROJECT_DIR$/src/PointerAnalysisTransformer.java" />
+        <option value="$PROJECT_DIR$/src/main/main/WholeProgramTransformer.java" />
+        <option value="$PROJECT_DIR$/src/main/MainEntrance.java" />
+        <option value="$PROJECT_DIR$/src/main/AnswerPrinter.java" />
+        <option value="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintAnnotation.java" />
+        <option value="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintConvertUtility.java" />
+        <option value="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/BasicConstraintGraphNode.java" />
+        <option value="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintConstructor.java" />
+        <option value="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintLambdaConstructor.java" />
+        <option value="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintVariable.java" />
+        <option value="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/PointerAnalysisTransformer.java" />
+        <option value="$PROJECT_DIR$/src/main/Anderson.java" />
+        <option value="$PROJECT_DIR$/src/main/WholeProgramTransformer.java" />
+        <option value="$PROJECT_DIR$/test/resources/FieldSensitivity.java" />
+        <option value="$PROJECT_DIR$/test/resources/Hello.java" />
+        <option value="$PROJECT_DIR$/src/main/deprecated/WholeProgramTransformer.java" />
       </list>
     </option>
   </component>
@@ -134,10 +258,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="62" />
-    <option name="y" value="41" />
-    <option name="width" value="1890" />
-    <option name="height" value="960" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -165,7 +287,23 @@
             <path>
               <item name="XYPointerAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="XYPointerAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XYPointerAnalysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XYPointerAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="annotatedAndersonAnalysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XYPointerAnalysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XYPointerAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="annotatedAndersonAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="constraintGraphNode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -177,13 +315,22 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="print_cfg&#9;PSI&#9;JAVA://soot.tools.CFGViewer#print_cfg&#10;DrawCfg&#9;PSI&#9;JAVA://soot.util.cfgcmd.CFGToDotGraph#drawCFG&#10;CFGBuild&#9;PSI&#9;JAVA://polyglot.visit.CFGBuilder&#10;CFG&#9;PSI&#9;JAVA://soot.coffi.CFG#cfg&#10;PointerAnalysis&#9;PSI&#9;JAVA://soot.jimple.toolkits.pointer.DumbPointerAnalysis" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543314536633" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="main" />
+      <recent name="annoatedAndersonAnalysis" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -199,7 +346,7 @@
   </component>
   <component name="RunManager">
     <configuration name="MainEntrance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainEntrance" />
+      <option name="MAIN_CLASS_NAME" value="main.MainEntrance" />
       <module name="XYPointerAnalysis" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\spy\IdeaProjects\XYPointerAnalysis\lib\ C:\Users\spy\IdeaProjects\XYPointerAnalysis\out\production\XYPointerAnalysis\ FieldSensitivity" />
     </configuration>
@@ -222,7 +369,7 @@
       <updated>1543284651549</updated>
       <workItem from="1543284655338" duration="6986000" />
       <workItem from="1543295434790" duration="6944000" />
-      <workItem from="1543368357280" duration="1929000" />
+      <workItem from="1543368357280" duration="33977000" />
     </task>
     <task id="LOCAL-00001" summary="Remove unversioned files from git. Add gitignore.">
       <created>1543368659023</created>
@@ -245,45 +392,74 @@
       <option name="project" value="LOCAL" />
       <updated>1543369256482</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update soot dependence.">
+      <created>1543370314938</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543370314938</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Basic constraint graph.">
+      <created>1543607555165</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543607555165</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Rename package.">
+      <created>1543607725903</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543607725903</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Rename package.">
+      <created>1543623184309</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543623184309</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15859000" />
+    <option name="totallyTimeSpent" value="47907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32988358" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.330373" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32988358" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14390896" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14323963" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966533" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32988358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,79 +472,11 @@
     <MESSAGE value="Remove unversioned files from git. Add gitignore." />
     <MESSAGE value="Format code and imports." />
     <MESSAGE value="Update soot dependence." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update soot dependence." />
+    <MESSAGE value="Basic constraint graph." />
+    <MESSAGE value="Rename package." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename package." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MainEntrance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Hello.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WholeProgramTransformer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Anderson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnswerPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/FieldSensitivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/soot/src/main/java/soot/jimple/spark/SparkTransformer.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/java/lang/Integer.class" />
-    <entry file="file://$PROJECT_DIR$/src/A.java" />
-    <entry file="file://$PROJECT_DIR$/src/FieldSensitivity.java" />
-    <entry file="file://$PROJECT_DIR$/src/Hello.java" />
-    <entry file="file://$PROJECT_DIR$/test/benchmark/A.java" />
-    <entry file="file://$USER_HOME$/Desktop/soot/src/main/java/soot/jimple/spark/ondemand/DemandCSPointsTo.java" />
     <entry file="file://$PROJECT_DIR$/test/A.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -391,63 +499,360 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainEntrance.java">
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/toolkits/pointer/DumbPointerAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="357">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/dava/internal/AST/ASTIfNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/dava/internal/AST/ASTNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/util/dot/DotGraphConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/util/dot/DotGraphUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1455">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/util/dot/DotGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4914">
+          <caret line="279" column="25" selection-start-line="279" selection-start-column="25" selection-end-line="279" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/coffi/CFG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="795" column="13" lean-forward="true" selection-start-line="795" selection-start-column="13" selection-end-line="795" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/dava/internal/AST/ASTMethodNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-924">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/spark/pag/PAG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205">
+          <caret line="761" column="5" selection-start-line="761" selection-start-column="5" selection-end-line="761" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/PointsToAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1554">
+          <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-jar-with-dependencies.jar!/polyglot/visit/CFGBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/BodyTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/util/cfgcmd/CFGToDotGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1474">
+          <caret line="324" column="21" selection-start-line="324" selection-start-column="13" selection-end-line="324" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/tools/CFGViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4494">
+          <caret line="236" selection-end-line="236" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/ConstraintProjection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintObjectConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/util/queue/QueueReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/Local.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/SceneTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="1388" column="26" selection-start-line="1388" selection-start-column="26" selection-end-line="1388" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/internal/JInvokeStmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="90" column="14" lean-forward="true" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/AssignStmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/internal/JIdentityStmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/PackManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="377" column="4" selection-start-line="377" selection-start-column="4" selection-end-line="377" selection-end-column="4" />
+          <folding>
+            <element signature="e#6688#6702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/Stmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/internal/JAssignStmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3705">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/cfg/cfgTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/BasicConstraintGraphNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintLambdaConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/constraintGraphNode/ConstraintVariable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Anderson.java">
+    <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AnswerPrinter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintConvertUtility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="84">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/FieldSensitivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintAnnotation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="126">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WholeProgramTransformer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/MainEntrance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="42" column="60" lean-forward="true" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+        <state relative-caret-position="105">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Hello.java">
+    <entry file="file://$PROJECT_DIR$/test/resources/benchmark/objects/A.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="399">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/benchmark/objects/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/benchmark/internal/Benchmark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/FieldSensitivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/Hello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/PointerAnalysisTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/deprecated/AnswerPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/deprecated/WholeProgramTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/deprecated/Anderson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -471,7 +876,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -483,6 +888,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>ECLIPSE</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -511,6 +917,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

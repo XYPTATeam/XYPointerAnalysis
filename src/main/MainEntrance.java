@@ -1,3 +1,4 @@
+import deprecated.WholeProgramTransformer;
 import soot.PackManager;
 import soot.Transform;
 

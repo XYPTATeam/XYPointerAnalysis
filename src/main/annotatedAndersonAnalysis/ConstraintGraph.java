@@ -31,10 +31,8 @@ public class ConstraintGraph {
             Map<BasicConstraintGraphNode, Set<ConstraintAnnotation>> preds = variable.getPreds();
             for (BasicConstraintGraphNode pred : preds.keySet()) {
                 if (pred instanceof ConstraintConstructor) {
-                    {
-                        for (ConstraintAnnotation annotation : preds.get(pred))
-                            addToLS((ConstraintConstructor) pred, annotation, LS);
-                    }
+                    for (ConstraintAnnotation annotation : preds.get(pred))
+                        addToLS((ConstraintConstructor) pred, annotation, LS);
                 } else if (pred instanceof ConstraintVariable) {
                     Map<ConstraintConstructor, Set<ConstraintAnnotation>> predLS = getLS((ConstraintVariable) pred);
                     if (predLS != null) {

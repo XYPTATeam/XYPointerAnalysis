@@ -1,3 +1,5 @@
+package deprecated;
+
 import soot.Local;
 
 import java.util.*;

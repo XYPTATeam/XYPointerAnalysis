@@ -5,7 +5,7 @@ import java.util.Objects;
 public class ConstraintAnnotation {
     public static final ConstraintAnnotation EMPTY = new ConstraintAnnotation();
 
-    // TODO: confirm type of annotation
+    // TODO: confirm the type of annotation
     private Object annotation;
 
     private ConstraintAnnotation() {
