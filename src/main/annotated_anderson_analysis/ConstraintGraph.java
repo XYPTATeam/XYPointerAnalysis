@@ -3,7 +3,7 @@ package annotated_anderson_analysis;
 import annotated_anderson_analysis.constraint_graph_node.BasicConstraintGraphNode;
 import annotated_anderson_analysis.constraint_graph_node.ConstraintConstructor;
 import annotated_anderson_analysis.constraint_graph_node.ConstraintVariable;
-import soot.Value;
+import soot.Local;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -11,20 +11,22 @@ import java.util.Map;
 import java.util.Set;
 
 public class ConstraintGraph {
-    private Map<Value, ConstraintVariable> variableMap;
+    private Map<Local, ConstraintVariable> variableMap;
     private Map<ConstraintVariable, Map<ConstraintConstructor, Set<ConstraintAnnotation>>> LSMap;
+    private int nextVariableOrder = 0;
 
     public ConstraintGraph() {
         LSMap = new HashMap<>();
         variableMap = new HashMap<>();
     }
 
-    public ConstraintVariable getFromVariableMap(Value value) {
-        return variableMap.get(value);
-    }
+    public ConstraintVariable getFromVariableMap(Local value) {
+        ConstraintVariable retVariable = variableMap.get(value);
+        if (retVariable == null) {
+            retVariable = new ConstraintVariable(value, nextVariableOrder++);
+        }
 
-    public void addToVaribaleMap(Value value, ConstraintVariable variable) {
-        variableMap.put(value, variable);
+        return retVariable;
     }
 
     public Map<ConstraintConstructor, Set<ConstraintAnnotation>> getLS(ConstraintVariable variable) {
@@ -72,48 +74,72 @@ public class ConstraintGraph {
 
     public void addToGraph(BasicConstraintGraphNode pred, BasicConstraintGraphNode succ, ConstraintAnnotation annotation) {
         if (pred instanceof ConstraintVariable) {
+            ConstraintVariable predVar = (ConstraintVariable) pred;
             if (succ instanceof ConstraintVariable) {
-                ConstraintVariable varPred = (ConstraintVariable) pred;
-                ConstraintVariable varSucc = (ConstraintVariable) succ;
-                if (varPred.getOrder() < varSucc.getOrder())
-                    varSucc.addToPreds(varPred, annotation);
-                else
-                    varPred.addToSuccs(varSucc, annotation);
+                ConstraintVariable succVar = (ConstraintVariable) succ;
+                if (predVar.getOrder() < succVar.getOrder()) {
+                    succVar.addToPreds(predVar, annotation);
+                    checkTransInSuccs(succVar, predVar, annotation);
+                } else {
+                    predVar.addToSuccs(succVar, annotation);
+                    checkTransInPreds(predVar, succVar, annotation);
+                }
             } else {
-                ConstraintVariable variable = (ConstraintVariable) pred;
-                variable.addToSuccs(succ, annotation);
+                {
+                    predVar.addToSuccs(succ, annotation);
+                    checkTransInPreds(predVar, succ, annotation);
+                }
             }
         } else if (succ instanceof ConstraintVariable) {
-            ConstraintVariable variable = (ConstraintVariable) succ;
-            variable.addToSuccs(succ, annotation);
+            ConstraintVariable succVar = (ConstraintVariable) succ;
+            succVar.addToPreds(pred, annotation);
+            checkTransInSuccs(succVar, pred, annotation);
         } else { // non-atomic constraint
             resolve(pred, succ, annotation);
         }
     }
 
-    public void resolve(BasicConstraintGraphNode pred, BasicConstraintGraphNode succ, ConstraintAnnotation annotation) {
+    private void resolve(BasicConstraintGraphNode pred, BasicConstraintGraphNode succ, ConstraintAnnotation annotation) {
         if (pred instanceof ConstraintConstructor && succ instanceof ConstraintConstructor) {
             // TODO: resolve
         }
     }
 
-    public void trans(BasicConstraintGraphNode pred, ConstraintAnnotation annoPred, BasicConstraintGraphNode succ, ConstraintAnnotation annoSucc) {
-        ConstraintAnnotation newAnnotation = getMatchedAnnotation(annoPred, annoSucc);
+    private void trans(BasicConstraintGraphNode pred, ConstraintAnnotation predAnnotation, BasicConstraintGraphNode succ, ConstraintAnnotation succAnnotation) {
+        ConstraintAnnotation newAnnotation = getMatchedAnnotation(predAnnotation, succAnnotation);
         if (newAnnotation != null) {
             addToGraph(succ, pred, newAnnotation);
         }
     }
 
-    public ConstraintAnnotation getMatchedAnnotation(ConstraintAnnotation annoPred, ConstraintAnnotation annoSucc) {
+    private void checkTransInPreds(ConstraintVariable variable, BasicConstraintGraphNode succ, ConstraintAnnotation succAnnotation) {
+        Map<BasicConstraintGraphNode, Set<ConstraintAnnotation>> preds = variable.getPreds();
+        for (BasicConstraintGraphNode pred : preds.keySet()) {
+            for (ConstraintAnnotation predAnnotation : preds.get(pred)) {
+                trans(pred, predAnnotation, succ, succAnnotation);
+            }
+        }
+    }
+
+    private void checkTransInSuccs(ConstraintVariable variable, BasicConstraintGraphNode pred, ConstraintAnnotation predAnnotation) {
+        Map<BasicConstraintGraphNode, Set<ConstraintAnnotation>> succs = variable.getSuccs();
+        for (BasicConstraintGraphNode succ : succs.keySet()) {
+            for (ConstraintAnnotation succAnnotation : succs.get(pred)) {
+                trans(pred, predAnnotation, succ, succAnnotation);
+            }
+        }
+    }
+
+    private ConstraintAnnotation getMatchedAnnotation(ConstraintAnnotation predAnnotation, ConstraintAnnotation succAnnotation) {
         ConstraintAnnotation newAnnotation = null;
-        if (annoPred == ConstraintAnnotation.EMPTY) {
-            if (annoSucc == ConstraintAnnotation.EMPTY)
+        if (predAnnotation == ConstraintAnnotation.EMPTY) {
+            if (succAnnotation == ConstraintAnnotation.EMPTY)
                 newAnnotation = ConstraintAnnotation.EMPTY;
             else
-                newAnnotation = annoSucc.getClone();
-        } else if (annoSucc == ConstraintAnnotation.EMPTY) {
-            newAnnotation = annoPred.getClone();
-        } else if (annoPred.equals(annoSucc)) {
+                newAnnotation = succAnnotation.getClone();
+        } else if (succAnnotation == ConstraintAnnotation.EMPTY) {
+            newAnnotation = predAnnotation.getClone();
+        } else if (predAnnotation.equals(succAnnotation)) {
             newAnnotation = ConstraintAnnotation.EMPTY;
         }
         return newAnnotation;

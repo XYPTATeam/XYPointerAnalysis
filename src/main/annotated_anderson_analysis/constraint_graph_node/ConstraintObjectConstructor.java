@@ -10,7 +10,7 @@ public class ConstraintObjectConstructor extends ConstraintConstructor {
 
     public ConstraintObjectConstructor(int id, RefType type) {
         this.id = id;
-        objectLocal = new JimpleLocal("Object_" + id, type);
+        objectLocal = new JimpleLocal("object_" + id, type);
     }
 
     public int getId() {
