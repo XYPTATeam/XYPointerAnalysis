@@ -1,24 +1,25 @@
 package annotated_anderson_analysis;
 
+import soot.SootFieldRef;
+
 import java.util.Objects;
 
 public class ConstraintAnnotation {
     public static final ConstraintAnnotation EMPTY = new ConstraintAnnotation();
 
-    // TODO: confirm the type of annotation
-    private Object annotation;
+    private SootFieldRef fieldRef;
 
     private ConstraintAnnotation() {
-        annotation = null;
+        fieldRef = null;
     }
 
-    public ConstraintAnnotation(Object annotation) {
-        this.annotation = annotation;
+    public ConstraintAnnotation(SootFieldRef fieldRef) {
+        this.fieldRef = fieldRef;
     }
 
 
-    public Object getAnnotation() {
-        return this.annotation;
+    public Object getFieldRef() {
+        return this.fieldRef;
     }
 
     @Override
@@ -26,16 +27,16 @@ public class ConstraintAnnotation {
         if (this == o) return true;
         if (o == null || this.getClass() != o.getClass()) return false;
         ConstraintAnnotation that = (ConstraintAnnotation) o;
-        return Objects.equals(this.annotation, that.annotation);
+        return Objects.equals(this.fieldRef, that.fieldRef);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(this.annotation);
+        return Objects.hash(this.fieldRef);
     }
 
     public ConstraintAnnotation getClone() {
-        ConstraintAnnotation newAnnotation = new ConstraintAnnotation(annotation);
+        ConstraintAnnotation newAnnotation = new ConstraintAnnotation(fieldRef);
         return newAnnotation;
     }
 

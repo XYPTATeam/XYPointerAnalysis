@@ -13,7 +13,6 @@ import java.util.Set;
 public class ConstraintGraph {
     private Map<Local, ConstraintVariable> variableMap;
     private Map<ConstraintVariable, Map<ConstraintConstructor, Set<ConstraintAnnotation>>> LSMap;
-    private int nextVariableOrder = 0;
 
     public ConstraintGraph() {
         LSMap = new HashMap<>();
@@ -23,7 +22,7 @@ public class ConstraintGraph {
     public ConstraintVariable getFromVariableMap(Local value) {
         ConstraintVariable retVariable = variableMap.get(value);
         if (retVariable == null) {
-            retVariable = new ConstraintVariable(value, nextVariableOrder++);
+            retVariable = new ConstraintVariable(value);
         }
 
         return retVariable;

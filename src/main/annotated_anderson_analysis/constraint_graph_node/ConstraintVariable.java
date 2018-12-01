@@ -9,14 +9,29 @@ import java.util.Map;
 import java.util.Set;
 
 public class ConstraintVariable extends BasicConstraintGraphNode {
+    private static int nextVariableOrder = 0;
+    private static final int OBJECT_ORDER_OFFSET = 100000;
+    private static final int FRESH_ORDER_OFFSET = 200000;
+
     private Local local;
     private int order;
     private Map<BasicConstraintGraphNode, Set<ConstraintAnnotation>> preds;
     private Map<BasicConstraintGraphNode, Set<ConstraintAnnotation>> succs;
 
-    public ConstraintVariable(Local local, int order) {
+    public ConstraintVariable(Local local) {
         this.local = local;
-        this.order = order;
+        order = nextVariableOrder++;
+        preds = new HashMap<>();
+        succs = new HashMap<>();
+    }
+
+    public ConstraintVariable(Local local, int constructMode) {
+        this.local = local;
+        if (constructMode == 1) { // object variable
+            order = OBJECT_ORDER_OFFSET + nextVariableOrder++;
+        } else if (constructMode == 2) { // fresh variable
+            order = FRESH_ORDER_OFFSET + nextVariableOrder++;
+        }
         preds = new HashMap<>();
         succs = new HashMap<>();
     }
