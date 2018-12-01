@@ -1,6 +1,7 @@
 package annotated_anderson_analysis.constraint_graph_node;
 
 import annotated_anderson_analysis.ConstraintAnnotation;
+import soot.Value;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,14 +9,20 @@ import java.util.Map;
 import java.util.Set;
 
 public class ConstraintVariable extends BasicConstraintGraphNode {
+    private Value value;
     private int order;
     private Map<BasicConstraintGraphNode, Set<ConstraintAnnotation>> preds;
     private Map<BasicConstraintGraphNode, Set<ConstraintAnnotation>> succs;
 
-    public ConstraintVariable(int order) {
+    public ConstraintVariable(Value value, int order) {
+        this.value = value;
         this.order = order;
         preds = new HashMap<>();
         succs = new HashMap<>();
+    }
+
+    public Value getValue() {
+        return value;
     }
 
     public int getOrder() {

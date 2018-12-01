@@ -3,6 +3,7 @@ package annotated_anderson_analysis;
 import annotated_anderson_analysis.constraint_graph_node.BasicConstraintGraphNode;
 import annotated_anderson_analysis.constraint_graph_node.ConstraintConstructor;
 import annotated_anderson_analysis.constraint_graph_node.ConstraintVariable;
+import soot.Value;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -10,20 +11,23 @@ import java.util.Map;
 import java.util.Set;
 
 public class ConstraintGraph {
+    private Map<Value, ConstraintVariable> variableMap;
     private Map<ConstraintVariable, Map<ConstraintConstructor, Set<ConstraintAnnotation>>> LSMap;
 
     public ConstraintGraph() {
         LSMap = new HashMap<>();
+        variableMap = new HashMap<>();
     }
 
-    public void addVariable(ConstraintVariable variable) {
-        LSMap.put(variable, null);
+    public ConstraintVariable getFromVariableMap(Value value) {
+        return variableMap.get(value);
+    }
+
+    public void addToVaribaleMap(Value value, ConstraintVariable variable) {
+        variableMap.put(value, variable);
     }
 
     public Map<ConstraintConstructor, Set<ConstraintAnnotation>> getLS(ConstraintVariable variable) {
-        if (!LSMap.containsKey(variable))
-            return null;
-
         Map<ConstraintConstructor, Set<ConstraintAnnotation>> LS = LSMap.get(variable);
         if (LS == null) {
             LS = new HashMap<>();
