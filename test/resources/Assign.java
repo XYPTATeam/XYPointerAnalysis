@@ -1,4 +1,5 @@
-import benchmark.objects.*;
+import benchmark.objects.A;
+import benchmark.objects.B;
 
 public class Assign {
     public static void main(String[] args) {
@@ -11,6 +12,13 @@ public class Assign {
 
         B b2 = a1.f;
 
+        a2.f = a1.f;
+
         B b3 = a1.getF();
+
+        A[] aArray = new A[3];
+
+        aArray[0] = a1;
+        a2 = aArray[0];
     }
 }
