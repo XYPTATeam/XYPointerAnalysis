@@ -1,9 +1,7 @@
 package cfg;
 
 import org.junit.Test;
-import polyglot.visit.CFGBuilder;
 import soot.*;
-import soot.tools.CFGViewer;
 import soot.util.Chain;
 
 import java.util.List;
