@@ -108,8 +108,8 @@ public class ConstraintConvertUtility {
             } else {
                 InvokeExpr invokeExpr = stmt.getInvokeExpr();
                 // FIXME
-                if (!(invokeExpr instanceof SpecialInvokeExpr))
-                    analysisInFuncInvoke(invokeExpr, constraintGraph);
+//                if (!(invokeExpr instanceof SpecialInvokeExpr))
+                analysisInFuncInvoke(invokeExpr, constraintGraph);
             }
         }
     }

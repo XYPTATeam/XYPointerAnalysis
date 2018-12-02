@@ -1,23 +1,23 @@
 package benchmark.objects;
 
+import benchmark.objects.B;
+
 public class A {
 
-	// Object A with attributes of type B
-
-
+    // Object A with attributes of type B
     public A() {
     }
 
-//	public int i = 5;
+    //	public int i = 5;
 //
-//	public B f = new B();
+    public B f = new B();
 //	public B g = new B();
 //	public B h;
 
 
-//	public A(B b) {
-//		this.f = b;
-//	}
+	public A(B b) {
+		this.f = b;
+	}
 //
 //	public B getF() {
 //		return f;
