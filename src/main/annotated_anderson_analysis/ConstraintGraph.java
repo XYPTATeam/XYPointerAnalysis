@@ -36,6 +36,7 @@ public class ConstraintGraph {
         ConstraintVariable retVariable = variableMap.get(value);
         if (retVariable == null) {
             retVariable = new ConstraintVariable(value);
+            variableMap.put(value, retVariable);
         }
 
         return retVariable;
@@ -85,6 +86,10 @@ public class ConstraintGraph {
     }
 
     public void addToGraph(BasicConstraintGraphNode pred, BasicConstraintGraphNode succ, ConstraintAnnotation annotation) {
+        // clear LS result after changing the constraint graph
+        if(!LSMap.keySet().isEmpty())
+            LSMap.clear();
+
         if (pred instanceof ConstraintVariable) {
             ConstraintVariable predVar = (ConstraintVariable) pred;
             if (succ instanceof ConstraintVariable) {
@@ -120,7 +125,7 @@ public class ConstraintGraph {
     private void trans(BasicConstraintGraphNode pred, ConstraintAnnotation predAnnotation, BasicConstraintGraphNode succ, ConstraintAnnotation succAnnotation) {
         ConstraintAnnotation newAnnotation = getMatchedAnnotation(predAnnotation, succAnnotation);
         if (newAnnotation != null) {
-            addToGraph(succ, pred, newAnnotation);
+            addToGraph(pred, succ, newAnnotation);
         }
     }
 
@@ -136,9 +141,10 @@ public class ConstraintGraph {
     private void checkTransInSuccs(ConstraintVariable variable, BasicConstraintGraphNode pred, ConstraintAnnotation predAnnotation) {
         Map<BasicConstraintGraphNode, Set<ConstraintAnnotation>> succs = variable.getSuccs();
         for (BasicConstraintGraphNode succ : succs.keySet()) {
-            for (ConstraintAnnotation succAnnotation : succs.get(pred)) {
-                trans(pred, predAnnotation, succ, succAnnotation);
-            }
+            Set<ConstraintAnnotation> succAnnotationSet = succs.get(succ);
+                for (ConstraintAnnotation succAnnotation : succAnnotationSet) {
+                    trans(pred, predAnnotation, succ, succAnnotation);
+                }
         }
     }
 

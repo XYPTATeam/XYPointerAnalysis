@@ -17,6 +17,8 @@ public class LookUpTable {
         Iterator<SootClass> classIt = sClasses.iterator();
         while (classIt.hasNext()) {
             SootClass sClass = classIt.next();
+            if (sClass.toString().equals("benchmark.internal.Benchmark"))
+                continue;
             List<SootMethod> sMethods = sClass.getMethods();
             Map<String, SootMethod> methodMap = new HashMap<>();
             classMethodMap.put(sClass.getType(), methodMap);

@@ -57,7 +57,7 @@ public class TestAssign {
 
         String[] sootArgs = new String[5];
         String testDir = getClass().getResource("/").getPath();
-        String testClass = "Assign";
+        String testClass = "Hello";
         sootArgs[0] = "-w";
         sootArgs[1] = "-pp";
         sootArgs[2] = "-cp";

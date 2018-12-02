@@ -21,6 +21,13 @@ public class ConstraintConvertUtility {
         for (Unit u : body.getUnits()) {
             convertFromStmt(u, null, paramList, new HashSet<>(), constraintGraph);
         }
+
+        for (Integer idx : queries.keySet()) {
+            Local testLocal = queries.get(idx);
+            ConstraintVariable testVar = constraintGraph.getFromVariableMap(testLocal);
+            Map<ConstraintConstructor, Set<ConstraintAnnotation>> result = constraintGraph.getLS(testVar);
+            System.out.println(testLocal + ": " + result.keySet());
+        }
     }
 
     public static Set<Local> analysisInFuncInvoke(InvokeExpr invokeExpr, ConstraintGraph constraintGraph) {
@@ -100,7 +107,9 @@ public class ConstraintConvertUtility {
                 queries.put(id, (Local) v);
             } else {
                 InvokeExpr invokeExpr = stmt.getInvokeExpr();
-                analysisInFuncInvoke(invokeExpr, constraintGraph);
+                // FIXME
+                if (!(invokeExpr instanceof SpecialInvokeExpr))
+                    analysisInFuncInvoke(invokeExpr, constraintGraph);
             }
         }
     }
@@ -158,7 +167,7 @@ public class ConstraintConvertUtility {
     private static void processLocalToLocal(Local left, Local right, ConstraintGraph constraintGraph) {
         ConstraintVariable leftVar = constraintGraph.getFromVariableMap(left);
         ConstraintVariable rightVar = constraintGraph.getFromVariableMap(right);
-        constraintGraph.addToGraph(leftVar, rightVar, ConstraintAnnotation.EMPTY);
+        constraintGraph.addToGraph(rightVar, leftVar, ConstraintAnnotation.EMPTY);
     }
 
     private static void processLocalToFieldRef(Local left, InstanceFieldRef right, ConstraintGraph constraintGraph) {
