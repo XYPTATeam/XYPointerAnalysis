@@ -11,6 +11,8 @@ import soot.jimple.*;
 import java.util.Map;
 import java.util.Set;
 
+import static annotated_anderson_analysis.LoopUpTableConstructor.loopUpTable;
+
 public class ConstraintConvertUtility {
     public static void convertFromDefinitionStmt(DefinitionStmt stmt, int allocID, ConstraintGraph constraintGraph) {
         if (stmt instanceof AssignStmt) {
@@ -32,8 +34,6 @@ public class ConstraintConvertUtility {
                     processFieldRefToLocal((InstanceFieldRef) leftOp, (Local) rightOp, constraintGraph);
                 }
             }
-        } else if (stmt instanceof InvokeStmt) {
-
         }
     }
 
@@ -81,6 +81,31 @@ public class ConstraintConvertUtility {
 
     private static void processLocalToVirtualInvoke(Local left, VirtualInvokeExpr right, ConstraintGraph constraintGraph) {
 
+        ConstraintVariable leftVar = constraintGraph.getFromVariableMap(left);
+        lookUpItem result = search(right);
+        //loopUpItem结构见LoopUpTableConstructor。
+        //下面应该怎么连起来
+
+
+
+    }
+
+    private static lookUpItem search(VirtualInvokeExpr right){
+        String sig = right.getMethod().toString();
+        lookUpClass lc = loopUpTable.get(right.getClass());
+        for(lookUpItem li :lc.lookUpList){
+            if(li.sig == sig){
+                return li;
+            }
+        }
+        String superclass = lc.inheritClass;
+        lc = loopUpTable.get(superclass);
+        for(lookUpItem li :lc.lookUpList){
+            if(li.sig == sig){
+                return li;
+            }
+        }
+        return null;
     }
 
     private static void processFieldRefToLocal(InstanceFieldRef left, Local right, ConstraintGraph constraintGraph) {
