@@ -17,6 +17,15 @@ public class TestAssign {
                         QueueReader<MethodOrMethodContext> qr = rechableMethods.listener();
                         while (qr.hasNext()) {
                             SootMethod sm = qr.next().method();
+                            if (sm.toString().startsWith("<java") || sm.toString().startsWith("<sun")) {
+                                qr.remove();
+                            }
+                        }
+
+                        qr = rechableMethods.listener();
+                        while (qr.hasNext()) {
+                            MethodOrMethodContext mc = qr.next();
+                            SootMethod sm = mc.method();
                             int allocID = 0;
                             if (sm.hasActiveBody()) {
                                 for (Unit u : sm.getActiveBody().getUnits()) {

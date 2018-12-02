@@ -14,12 +14,25 @@ public class ConstraintGraph {
     private Map<Local, ConstraintVariable> variableMap;
     private Map<ConstraintVariable, Map<ConstraintConstructor, Set<ConstraintAnnotation>>> LSMap;
 
+    private Local thisLocal = null;
+
     public ConstraintGraph() {
         LSMap = new HashMap<>();
         variableMap = new HashMap<>();
     }
 
+    public Local getThisLocal() {
+        return this.thisLocal;
+    }
+
+    public void setThisLocal(Local thisLocal) {
+        this.thisLocal = thisLocal;
+    }
+
     public ConstraintVariable getFromVariableMap(Local value) {
+        if (value != null && value.toString().equals("this"))
+            value = thisLocal;
+
         ConstraintVariable retVariable = variableMap.get(value);
         if (retVariable == null) {
             retVariable = new ConstraintVariable(value);

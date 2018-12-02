@@ -26,5 +26,8 @@ public class A {
 	public B id(B b) {
 		return b;
 	}
+	public A func(A p1, B p2){
+		return f;
+	}
 
 }

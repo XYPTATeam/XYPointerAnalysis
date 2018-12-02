@@ -40,7 +40,7 @@ public class PointerAnalysisTransformer extends SceneTransformer {
                     }
                     if (u instanceof DefinitionStmt) {
                         DefinitionStmt du = (DefinitionStmt) u;
-                        ConstraintConvertUtility.convertFromDefinitionStmt(du, allocID, constraintGraph);
+//                        ConstraintConvertUtility.convertFromAssignStmt(du, allocID, constraintGraph);
                     }
                 }
             }
