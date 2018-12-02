@@ -12,8 +12,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-import static annotated_anderson_analysis.LoopUpTableConstructor.loopUpTable;
-
 public class ConstraintConvertUtility {
     private static int allocID = 0;
     private static TreeMap<Integer, Local> queries = new TreeMap<>();
@@ -34,9 +32,9 @@ public class ConstraintConvertUtility {
         // get runtime method
         SootMethod method = invokeExpr.getMethod();
         if (invokeExpr instanceof VirtualInvokeExpr) {
-//        lookUpItem result = search(right);
-            //loopUpItem结构见LoopUpTableConstructor。
-            //下面应该怎么连起来
+            lookUpItem result = LookUpTable.search((VirtualInvokeExpr)invokeExpr);
+//            loopUpItem结构见LoopUpTableConstructor。
+//            下面应该怎么连起来
         }
 
         // process in active body
@@ -167,24 +165,6 @@ public class ConstraintConvertUtility {
     private static void processLocalToInvoke(Local left, InvokeExpr right, ConstraintGraph constraintGraph) {
         analysisInFuncInvoke(right, constraintGraph);
         processAssignToLocal(left, retLocal, constraintGraph);
-    }
-
-    private static lookUpItem search(VirtualInvokeExpr right) {
-        String sig = right.getMethod().toString();
-        lookUpClass lc = loopUpTable.get(right.getClass());
-        for (lookUpItem li : lc.lookUpList) {
-            if (li.sig == sig) {
-                return li;
-            }
-        }
-        String superclass = lc.inheritClass;
-        lc = loopUpTable.get(superclass);
-        for (lookUpItem li : lc.lookUpList) {
-            if (li.sig == sig) {
-                return li;
-            }
-        }
-        return null;
     }
 
     private static void processFieldRefToLocal(InstanceFieldRef left, Local right, ConstraintGraph constraintGraph) {
