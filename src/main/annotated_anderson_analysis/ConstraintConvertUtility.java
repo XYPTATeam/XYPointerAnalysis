@@ -1,23 +1,31 @@
 package annotated_anderson_analysis;
 
 import annotated_anderson_analysis.constraint_graph_node.BasicConstraintGraphNode;
+import annotated_anderson_analysis.constraint_graph_node.ConstraintConstructor;
 import annotated_anderson_analysis.constraint_graph_node.ConstraintObjectConstructor;
 import annotated_anderson_analysis.constraint_graph_node.ConstraintVariable;
 import soot.*;
 import soot.jimple.*;
 import soot.jimple.internal.JimpleLocal;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.*;
 
 public class ConstraintConvertUtility {
     private static int allocID = 0;
     private static TreeMap<Integer, Local> queries = new TreeMap<>();
-    private static Local retLocal;
 
-    public static void analysisInFuncInvoke(InvokeExpr invokeExpr, ConstraintGraph constraintGraph) {
+    public static void analysisMain(SootMethod mainMethod, ConstraintGraph constraintGraph) {
+        Body body = mainMethod.getActiveBody();
+        List<Value> paramList = new ArrayList<>();
+        paramList.add(new JimpleLocal("args", mainMethod.getParameterType(0)));
+        for (Unit u : body.getUnits()) {
+            convertFromStmt(u, null, paramList, new HashSet<>(), constraintGraph);
+        }
+    }
+
+    public static Set<Local> analysisInFuncInvoke(InvokeExpr invokeExpr, ConstraintGraph constraintGraph) {
+        Set<Local> retLocalSet = new HashSet<>();
+
         List<Value> actualParamList = invokeExpr.getArgs();
         Local oriLocal = constraintGraph.getThisLocal();
 
@@ -32,31 +40,51 @@ public class ConstraintConvertUtility {
         // get runtime method
         SootMethod method = invokeExpr.getMethod();
         if (invokeExpr instanceof VirtualInvokeExpr) {
-            lookUpItem result = LookUpTable.search((VirtualInvokeExpr)invokeExpr);
-//            loopUpItem结构见LoopUpTableConstructor。
-//            下面应该怎么连起来
-        }
+            VirtualInvokeExpr virtualInvokeExpr = (VirtualInvokeExpr) invokeExpr;
+            String methodSig = virtualInvokeExpr.getMethod().getSubSignature();
 
-        // process in active body
-        if (method != null && method.hasActiveBody()) {
-            Body activeBody = method.getActiveBody();
-            for (Unit u : activeBody.getUnits()) {
-                if (u instanceof InvokeStmt) {
-                    convertFromInvokeStmt((InvokeStmt) u, constraintGraph);
-                } else if (u instanceof IdentityStmt) {
-                    convertFromIdentityStmt((IdentityStmt) u, actualParamList, constraintGraph);
-                } else if (u instanceof AssignStmt) {
-                    convertFromAssignStmt((AssignStmt) u, constraintGraph);
-                } else if (u instanceof ReturnStmt) {
-                    convertFromReturnStmt((ReturnStmt) u, invokeExpr, constraintGraph);
-                } else if (u instanceof IfStmt) {
-                    // TODO: flow-sensitive
+            Value baseValue = virtualInvokeExpr.getBase();
+            if (baseValue instanceof Local) {
+                ConstraintVariable baseVar = constraintGraph.getFromVariableMap((Local) baseValue);
+                Map<ConstraintConstructor, Set<ConstraintAnnotation>> LSMap = constraintGraph.getLS(baseVar);
+                for (ConstraintConstructor constructor : LSMap.keySet()) {
+                    if (constructor instanceof ConstraintObjectConstructor && LSMap.get(constructor).contains(ConstraintAnnotation.EMPTY)) {
+                        method = LookUpTable.search(((ConstraintObjectConstructor) constructor).getRefType(), methodSig);
+                        if (method != null && method.hasActiveBody()) {
+                            Body activeBody = method.getActiveBody();
+                            for (Unit u : activeBody.getUnits()) {
+                                convertFromStmt(u, invokeExpr, actualParamList, retLocalSet, constraintGraph);
+                            }
+                        }
+                    }
                 }
             }
         }
+        // process in active body
+        else if (method != null && method.hasActiveBody()) {
+            Body activeBody = method.getActiveBody();
+            for (Unit u : activeBody.getUnits()) {
+                convertFromStmt(u, invokeExpr, actualParamList, retLocalSet, constraintGraph);
+            }
+        }
 
-        // pop up local variable
+        // TODO: pop up local variable
         constraintGraph.setThisLocal(oriLocal);
+        return retLocalSet;
+    }
+
+    private static void convertFromStmt(Unit u, InvokeExpr invokeExpr, List<Value> actualParamList, Set<Local> retLocalSet, ConstraintGraph constraintGraph) {
+        if (u instanceof InvokeStmt) {
+            convertFromInvokeStmt((InvokeStmt) u, constraintGraph);
+        } else if (u instanceof IdentityStmt) {
+            convertFromIdentityStmt((IdentityStmt) u, actualParamList, constraintGraph);
+        } else if (u instanceof AssignStmt) {
+            convertFromAssignStmt((AssignStmt) u, constraintGraph);
+        } else if (u instanceof ReturnStmt) {
+            convertFromReturnStmt((ReturnStmt) u, invokeExpr, retLocalSet, constraintGraph);
+        } else if (u instanceof IfStmt) {
+            convertFromStmt(((IfStmt) u).getTarget(), invokeExpr, actualParamList, retLocalSet, constraintGraph);
+        }
     }
 
     private static void convertFromInvokeStmt(InvokeStmt stmt, ConstraintGraph constraintGraph) {
@@ -101,10 +129,11 @@ public class ConstraintConvertUtility {
         }
     }
 
-    public static void convertFromReturnStmt(ReturnStmt stmt, InvokeExpr invokeExpr, ConstraintGraph constraintGraph) {
+    public static void convertFromReturnStmt(ReturnStmt stmt, InvokeExpr invokeExpr, Set<Local> retLocalSet, ConstraintGraph constraintGraph) {
         Value retVal = stmt.getOp();
         Type retType = invokeExpr.getMethodRef().getReturnType();
-        retLocal = new JimpleLocal("return_local", retType);
+        Local retLocal = new JimpleLocal("return_local", retType);
+        retLocalSet.add(retLocal);
         processAssignToLocal(retLocal, retVal, constraintGraph);
     }
 
@@ -163,8 +192,9 @@ public class ConstraintConvertUtility {
     }
 
     private static void processLocalToInvoke(Local left, InvokeExpr right, ConstraintGraph constraintGraph) {
-        analysisInFuncInvoke(right, constraintGraph);
-        processAssignToLocal(left, retLocal, constraintGraph);
+        Set<Local> retLocalSet = analysisInFuncInvoke(right, constraintGraph);
+        for (Local retLocal : retLocalSet)
+            processAssignToLocal(left, retLocal, constraintGraph);
     }
 
     private static void processFieldRefToLocal(InstanceFieldRef left, Local right, ConstraintGraph constraintGraph) {

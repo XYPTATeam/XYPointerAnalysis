@@ -23,13 +23,13 @@ public class Assign {
         a2 = aArray[0];
 
 //        A a3 = a1.func(a2, b1);
-        A t1 = new A();
-        A t2 = new B();
-        B t3 = new B();
-        A a3 = t1.func(a2, b1);
-        a3 = t2.func(a2,b1);
-        a3 = t3.func(a2,b1);
-
-        t1.func(a2,b1);
+//        A t1 = new A();
+//        A t2 = new B();
+//        B t3 = new B();
+//        A a3 = t1.func(a2, b1);
+//        a3 = t2.func(a2,b1);
+//        a3 = t3.func(a2,b1);
+//
+//        t1.func(a2,b1);
     }
 }
