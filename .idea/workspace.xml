@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java" line="59" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java" line="73" />
   </component>
   <component name="ChangeListManager">
+    <list id="cc21e37d-3c42-41d0-a204-76a9994bda50" name="TempLog" comment="" />
     <list default="true" id="d544b044-7bed-4b62-a481-e5fa3df5da58" name="Default Changelist" comment="Update constraint converting method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sootOutput/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/sootOutput/Hello.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/main/TestAssign.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/TestAssign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/benchmark/objects/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/benchmark/objects/A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sootOutput/FieldSensitivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/sootOutput/FieldSensitivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintGraph.java" afterDir="false" />
     </list>
-    <list id="cc21e37d-3c42-41d0-a204-76a9994bda50" name="TempLog" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,13 +25,39 @@
     <splitter split-orientation="horizontal" split-proportion="0.58902276">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="PointerAnalysisTransformer.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PointerAnalysisTransformer.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/PointerAnalysisTransformer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="103">
-                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                <state relative-caret-position="264">
+                  <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ConstraintConvertUtility.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="327">
+                  <caret line="190" column="86" lean-forward="true" selection-start-line="190" selection-start-column="86" selection-end-line="190" selection-end-column="86" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ConstraintAnnotation.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintAnnotation.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-534">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#281#282#0" expanded="true" />
+                    <element signature="e#312#313#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -42,33 +66,32 @@
           <file leaf-file-name="LookUpTable.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/LookUpTable.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="20" selection-start-line="20" selection-end-line="20" />
+                <state relative-caret-position="75">
+                  <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ConstraintConvertUtility.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java">
+          <file leaf-file-name="ConstraintLambdaConstructor.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintLambdaConstructor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="250">
-                  <caret line="28" selection-start-line="28" selection-end-line="28" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="42">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ConstraintGraph.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="ConstraintGraph.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintGraph.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="205">
-                  <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
+                <state relative-caret-position="201">
+                  <caret line="130" column="64" selection-start-line="130" selection-start-column="64" selection-end-line="130" selection-end-column="64" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#846#847#0" expanded="true" />
-                    <element signature="e#888#889#0" expanded="true" />
+                    <element signature="e#1152#1153#0" expanded="true" />
+                    <element signature="e#1185#1186#0" expanded="true" />
+                    <element signature="e#1254#1255#0" expanded="true" />
+                    <element signature="e#1298#1299#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -77,10 +100,36 @@
           <file leaf-file-name="ConstraintVariable.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintVariable.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="124">
-                  <caret line="43" selection-start-line="43" selection-end-line="43" />
+                <state relative-caret-position="84">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
                   <folding>
+                    <element signature="e#1346#1347#0" expanded="true" />
                     <element signature="e#1379#1380#0" expanded="true" />
+                    <element signature="e#2263#2264#0" expanded="true" />
+                    <element signature="e#2317#2318#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BasicConstraintGraphNode.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/BasicConstraintGraphNode.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="42">
+                  <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ConstraintObjectConstructor.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="126">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#814#815#0" expanded="true" />
+                    <element signature="e#856#857#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -89,8 +138,8 @@
           <file leaf-file-name="TestAssign.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/main/TestAssign.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="124">
-                  <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
+                <state relative-caret-position="582">
+                  <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -105,8 +154,8 @@
           <file leaf-file-name="A.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/resources/benchmark/objects/A.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+                <state relative-caret-position="210">
+                  <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
                   <folding>
                     <element signature="e#252#253#0" expanded="true" />
                     <element signature="e#269#270#0" expanded="true" />
@@ -151,8 +200,8 @@
           <file leaf-file-name="FieldSensitivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/resources/FieldSensitivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="164">
-                  <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+                <state relative-caret-position="726">
+                  <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -182,6 +231,7 @@
       <find>s</find>
       <find>LocalToLocal</find>
       <find>addToGr</find>
+      <find>getFromVa</find>
     </findStrings>
     <replaceStrings>
       <replace>succ</replace>
@@ -197,7 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MainEntrance.java" />
         <option value="$PROJECT_DIR$/src/WholeProgramTransformer.java" />
         <option value="$PROJECT_DIR$/test/Hello.java" />
         <option value="$PROJECT_DIR$/src/annoatedAndersonAnalysis/constraintGraphNode/ConstraintProjection.java" />
@@ -228,26 +277,27 @@
         <option value="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintGraph.java" />
         <option value="$PROJECT_DIR$/src/main/Anderson.java" />
         <option value="$PROJECT_DIR$/src/main/WholeProgramTransformer.java" />
-        <option value="$PROJECT_DIR$/test/resources/FieldSensitivity.java" />
         <option value="$PROJECT_DIR$/test/resources/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/deprecated/WholeProgramTransformer.java" />
         <option value="$PROJECT_DIR$/src/main/annotatedAndersonAnalysis/ConstraintConvertUtility.java" />
         <option value="$PROJECT_DIR$/test/resources/TestAssign.java" />
         <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintConstructor.java" />
-        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintVariable.java" />
-        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintAnnotation.java" />
         <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/VirtualCallConstructor.java" />
         <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/VirtualCallIndex.java" />
         <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/LoopUpTableConstructor.java" />
-        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java" />
         <option value="$PROJECT_DIR$/test/resources/benchmark/objects/B.java" />
         <option value="$PROJECT_DIR$/test/resources/Assign.java" />
         <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/LookUpTable.java" />
         <option value="$PROJECT_DIR$/src/main/PointerAnalysisTransformer.java" />
-        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java" />
+        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintAnnotation.java" />
+        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java" />
         <option value="$PROJECT_DIR$/test/main/TestAssign.java" />
+        <option value="$PROJECT_DIR$/test/main/TestPointerAnalysis.java" />
         <option value="$PROJECT_DIR$/test/resources/benchmark/objects/A.java" />
+        <option value="$PROJECT_DIR$/test/resources/FieldSensitivity.java" />
+        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintVariable.java" />
+        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java" />
+        <option value="$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintGraph.java" />
       </list>
     </option>
   </component>
@@ -300,6 +350,14 @@
             <path>
               <item name="XYPointerAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="XYPointerAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="annotated_anderson_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="constraint_graph_node" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XYPointerAnalysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XYPointerAnalysis" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -331,7 +389,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="TestA&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/test/main/TestAssign.java&#10;ConstraintO&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java&#10;Conver&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java&#10;Method&#9;FILE&#9;jar://C:/Ubuntu_Share/XYPointerAnalysis/lib/sootclasses-trunk-sources.jar!/soot/SootMethod.java&#10;Assign.java&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/test/resources/Assign.java&#10;print_cfg&#9;PSI&#9;JAVA://soot.tools.CFGViewer#print_cfg&#10;DrawCfg&#9;PSI&#9;JAVA://soot.util.cfgcmd.CFGToDotGraph#drawCFG&#10;CFGBuild&#9;PSI&#9;JAVA://polyglot.visit.CFGBuilder&#10;CFG&#9;PSI&#9;JAVA://soot.coffi.CFG#cfg&#10;PointerAnalysis&#9;PSI&#9;JAVA://soot.jimple.toolkits.pointer.DumbPointerAnalysis" />
+    <property name="SearchEverywhereHistoryKey" value="Constraing&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/ConstraintGraph.java&#10;Po&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/PointerAnalysisTransformer.java&#10;Con&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java&#10;ConstraintAnn&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/ConstraintAnnotation.java&#10;TestA&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/test/main/TestAssign.java&#10;ConstraintO&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java&#10;Conver&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java&#10;Method&#9;FILE&#9;jar://C:/Ubuntu_Share/XYPointerAnalysis/lib/sootclasses-trunk-sources.jar!/soot/SootMethod.java&#10;Assign.java&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/test/resources/Assign.java&#10;print_cfg&#9;PSI&#9;JAVA://soot.tools.CFGViewer#print_cfg&#10;DrawCfg&#9;PSI&#9;JAVA://soot.util.cfgcmd.CFGToDotGraph#drawCFG&#10;CFGBuild&#9;PSI&#9;JAVA://polyglot.visit.CFGBuilder&#10;CFG&#9;PSI&#9;JAVA://soot.coffi.CFG#cfg&#10;PointerAnalysis&#9;PSI&#9;JAVA://soot.jimple.toolkits.pointer.DumbPointerAnalysis" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543314536633" />
@@ -476,12 +534,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestAssign.testAnalysis">
-    <configuration name="MainEntrance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.MainEntrance" />
-      <module name="XYPointerAnalysis" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\spy\IdeaProjects\XYPointerAnalysis\lib\ C:\Users\spy\IdeaProjects\XYPointerAnalysis\out\production\XYPointerAnalysis\ FieldSensitivity" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestPointerAnalysis.testFieldSensitivity">
     <configuration name="TestAssign" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="XYPointerAnalysis" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -533,18 +586,54 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="TestPointerAnalysis.testFieldSensitivity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="XYPointerAnalysis" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPointerAnalysis" />
+      <option name="METHOD_NAME" value="testFieldSensitivity" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestPointerAnalysis.testHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="XYPointerAnalysis" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPointerAnalysis" />
+      <option name="METHOD_NAME" value="testHello" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <list>
-      <item itemvalue="Application.MainEntrance" />
       <item itemvalue="JUnit.TestAssign.testAssign" />
       <item itemvalue="JUnit.TestAssign" />
       <item itemvalue="JUnit.TestAssign.testAnalysis" />
+      <item itemvalue="JUnit.TestPointerAnalysis.testHello" />
+      <item itemvalue="JUnit.TestPointerAnalysis.testFieldSensitivity" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPointerAnalysis.testFieldSensitivity" />
+        <item itemvalue="JUnit.TestPointerAnalysis.testHello" />
         <item itemvalue="JUnit.TestAssign.testAnalysis" />
         <item itemvalue="JUnit.TestAssign.testAssign" />
         <item itemvalue="JUnit.TestAssign" />
-        <item itemvalue="Application.MainEntrance" />
       </list>
     </recent_temporary>
   </component>
@@ -682,43 +771,57 @@
       <option name="project" value="LOCAL" />
       <updated>1543770843413</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update constraint converting method.">
+      <created>1543771535451</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1543771535451</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Debug order in FieldRef">
+      <created>1543811135288</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1543811135288</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 00h 51m 37s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 09h 53m 35s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 01h 00m 00s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 09h 55m 36s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 01h 03m 18s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 09h 57m 59s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 01h 07m 45s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 09h 59m 05s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 01h 09m 04s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 10h 20m 01s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 01h 16m 12s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 10h 54m 29s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 01h 17m 11s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 11h 49m 22s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 01h 17m 45s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 11h 54m 56s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 01h 18m 30s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 12h 23m 56s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAssign_testAnalysis - 2018.12.03 at 01h 22m 52s.xml">
-      <configuration name="TestAssign.testAnalysis" configurationId="JUnit" />
+    <history-entry file="TestPointerAnalysis_testFieldSensitivity - 2018.12.03 at 12h 24m 43s.xml">
+      <configuration name="TestPointerAnalysis.testFieldSensitivity" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121105000" />
+    <option name="totallyTimeSpent" value="133631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -743,7 +846,7 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49933067" weight="0.32988358" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32988358" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32988358" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32988358" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
@@ -756,7 +859,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" weight="0.3299866" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4320828" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4320828" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -789,10 +892,11 @@
     <MESSAGE value="Update constraintNode." />
     <MESSAGE value="Update trans method." />
     <MESSAGE value="Adjust analysis main frame." />
-    <MESSAGE value="Update constraint converting method." />
     <MESSAGE value="Ver 1.0 without clear up." />
     <MESSAGE value="Ver 1.0 debug." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver 1.0 debug." />
+    <MESSAGE value="Update constraint converting method." />
+    <MESSAGE value="Debug order in FieldRef" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug order in FieldRef" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -803,63 +907,57 @@
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>39</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>83</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>132</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>135</line>
+          <line>155</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>149</line>
+          <line>169</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>100</line>
+          <line>116</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>108</line>
+          <line>124</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>123</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>28</line>
+          <line>31</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
-          <line>21</line>
+          <line>22</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
@@ -869,17 +967,65 @@
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintGraph.java</url>
-          <line>92</line>
+          <line>116</line>
           <properties />
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
+          <line>240</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
+          <line>231</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
+          <line>230</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="32" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -952,28 +1098,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/VirtualCallIndex.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/InvokeStmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/Stmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/internal/JIdentityStmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/internal/JVirtualInvokeExpr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -1079,46 +1203,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintAnnotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/util/HashChain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="566" selection-start-line="566" selection-end-line="566" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/internal/JInvokeStmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#2007#2008#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1223,12 +1311,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/AbstractValueBox.java">
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/PatchingChain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <caret line="231" selection-start-line="231" selection-end-line="231" />
           <folding>
-            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#7010#7011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/Hello.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="303" column="7" lean-forward="true" selection-start-line="303" selection-start-column="7" selection-end-line="303" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/benchmark/objects/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/resources/benchmark/objects/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main/TestPointerAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1243,104 +1376,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/PatchingChain.java">
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/AbstractValueBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="231" selection-start-line="231" selection-end-line="231" />
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
-            <element signature="e#7010#7011#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/soot/jimple/internal/JInvokeStmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#2007#2008#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="1441" selection-start-line="1441" selection-end-line="1441" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main/TestAssign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintAnnotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-534">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/LookUpTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="75">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/Hello.java">
+    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintLambdaConstructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintVariable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="84">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
+            <element signature="e#1346#1347#0" expanded="true" />
             <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
+            <element signature="e#2317#2318#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/constraint_graph_node/BasicConstraintGraphNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="303" column="7" lean-forward="true" selection-start-line="303" selection-start-column="7" selection-end-line="303" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="89" column="37" lean-forward="true" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/benchmark/objects/B.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/main/TestAssign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/resources/benchmark/objects/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding>
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="42">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/PointerAnalysisTransformer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="264">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1349,8 +1483,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/resources/FieldSensitivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="726">
+          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="190" column="86" lean-forward="true" selection-start-line="190" selection-start-column="86" selection-end-line="190" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/annotated_anderson_analysis/ConstraintGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="130" column="64" selection-start-line="130" selection-start-column="64" selection-end-line="130" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1298#1299#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

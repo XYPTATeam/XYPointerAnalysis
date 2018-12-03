@@ -118,13 +118,17 @@ public class ConstraintGraph {
             ConstraintVariable predVar = (ConstraintVariable) pred;
             if (succ instanceof ConstraintVariable) {
                 ConstraintVariable succVar = (ConstraintVariable) succ;
-                if (predVar.getOrder() < succVar.getOrder()) {
-                    succVar.addToPreds(predVar, annotation);
-                    checkTransInSuccs(succVar, predVar, annotation);
-                } else {
-                    predVar.addToSuccs(succVar, annotation);
-                    checkTransInPreds(predVar, succVar, annotation);
-                }
+//                if (predVar.getOrder() < succVar.getOrder()) {
+//                    succVar.addToPreds(predVar, annotation);
+//                    checkTransInSuccs(succVar, predVar, annotation);
+//                } else {
+//                    predVar.addToSuccs(succVar, annotation);
+//                    checkTransInPreds(predVar, succVar, annotation);
+//                }
+                succVar.addToPreds(predVar, annotation);
+                predVar.addToSuccs(succVar, annotation);
+                checkTransInSuccs(succVar, predVar, annotation);
+                checkTransInPreds(predVar, succVar, annotation);
             } else {
                 {
                     predVar.addToSuccs(succ, annotation);
