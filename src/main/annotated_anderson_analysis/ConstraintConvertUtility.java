@@ -13,6 +13,7 @@ import java.util.*;
 public class ConstraintConvertUtility {
     private static int allocID = 0;
     private static TreeMap<Integer, Local> queries = new TreeMap<>();
+    private static Local thisLocal = null;
 
     public static void analysisMain(SootMethod mainMethod, ConstraintGraph constraintGraph) {
         Body body = mainMethod.getActiveBody();
@@ -25,8 +26,19 @@ public class ConstraintConvertUtility {
         for (Integer idx : queries.keySet()) {
             Local testLocal = queries.get(idx);
             ConstraintVariable testVar = constraintGraph.getFromVariableMap(testLocal);
-            Map<ConstraintConstructor, Set<ConstraintAnnotation>> result = constraintGraph.getLS(testVar);
-            System.out.println(testLocal + ": " + result.keySet());
+            Map<ConstraintConstructor, Set<ConstraintAnnotation>> resMap = constraintGraph.getLS(testVar);
+
+            // TODO: print result
+            System.out.println(testLocal + ": {");
+            for (ConstraintConstructor constructor : resMap.keySet()) {
+                Set<ConstraintAnnotation> resAnnoSet = resMap.get(constructor);
+                System.out.print(constructor + "--[");
+                for (ConstraintAnnotation annotation : resAnnoSet) {
+                    System.out.print(annotation + ", ");
+                }
+                System.out.println("]");
+            }
+            System.out.println("}");
         }
     }
 
@@ -34,14 +46,16 @@ public class ConstraintConvertUtility {
         Set<Local> retLocalSet = new HashSet<>();
 
         List<Value> actualParamList = invokeExpr.getArgs();
-        Local oriLocal = constraintGraph.getThisLocal();
+        Local oriLocal = thisLocal;
+        Set<ConstraintVariable> oriTempVarSet = constraintGraph.getTempVarSet();
+        constraintGraph.setTempVarSet(new HashSet<>());
 
         // get this variable
         if (invokeExpr instanceof InstanceInvokeExpr) {
             Value baseValue = ((InstanceInvokeExpr) invokeExpr).getBase();
             // TODO: recursively function invoking
             if (baseValue instanceof Local)
-                constraintGraph.setThisLocal((Local) baseValue);
+                thisLocal = ((Local) baseValue);
         }
 
         // get runtime method
@@ -76,7 +90,9 @@ public class ConstraintConvertUtility {
         }
 
         // TODO: pop up local variable
-        constraintGraph.setThisLocal(oriLocal);
+        constraintGraph.clearTempVariable();
+        constraintGraph.setTempVarSet(oriTempVarSet);
+        thisLocal = oriLocal;
         return retLocalSet;
     }
 
@@ -118,10 +134,14 @@ public class ConstraintConvertUtility {
         Value leftOp = stmt.getLeftOp();
         Value rightOp = stmt.getRightOp();
 
-        if (leftOp instanceof Local && rightOp instanceof ParameterRef) {
-            int rightIndex = ((ParameterRef) rightOp).getIndex();
-            Value rightVal = paramList.get(rightIndex);
-            processAssignToLocal((Local) leftOp, rightVal, constraintGraph);
+        if (leftOp instanceof Local) {
+            if (rightOp instanceof ParameterRef) {
+                int rightIndex = ((ParameterRef) rightOp).getIndex();
+                Value rightVal = paramList.get(rightIndex);
+                processAssignToLocal((Local) leftOp, rightVal, constraintGraph);
+            } else if (rightOp instanceof ThisRef) {
+                processThisIdentity((Local) leftOp, thisLocal, constraintGraph);
+            }
         }
     }
 
@@ -156,6 +176,13 @@ public class ConstraintConvertUtility {
         } else if (rightOp instanceof InvokeExpr) {
             processLocalToInvoke(leftOp, (InvokeExpr) rightOp, constraintGraph);
         }
+    }
+
+    private static void processThisIdentity(Local left, Local right, ConstraintGraph constraintGraph) {
+        ConstraintVariable leftVar = new ConstraintVariable(left, 3);
+        constraintGraph.addToVariableMap(left, leftVar);
+        ConstraintVariable rightVar = constraintGraph.getFromVariableMap(right);
+        constraintGraph.addToGraph(rightVar, leftVar, ConstraintAnnotation.EMPTY);
     }
 
     private static void processLocalToNew(Local left, NewExpr right, int allocID, ConstraintGraph constraintGraph) {

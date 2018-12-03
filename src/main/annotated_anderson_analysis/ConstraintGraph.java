@@ -5,41 +5,65 @@ import annotated_anderson_analysis.constraint_graph_node.ConstraintConstructor;
 import annotated_anderson_analysis.constraint_graph_node.ConstraintVariable;
 import soot.Local;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class ConstraintGraph {
     private Map<Local, ConstraintVariable> variableMap;
     private Map<ConstraintVariable, Map<ConstraintConstructor, Set<ConstraintAnnotation>>> LSMap;
-
-    private Local thisLocal = null;
+    private Set<ConstraintVariable> tempVarSet;
 
     public ConstraintGraph() {
         LSMap = new HashMap<>();
         variableMap = new HashMap<>();
+        tempVarSet = new HashSet<>();
     }
 
-    public Local getThisLocal() {
-        return this.thisLocal;
-    }
-
-    public void setThisLocal(Local thisLocal) {
-        this.thisLocal = thisLocal;
+    public void addToVariableMap(Local value, ConstraintVariable variable) {
+        variableMap.put(value, variable);
+        tempVarSet.add(variable);
     }
 
     public ConstraintVariable getFromVariableMap(Local value) {
-        if (value != null && value.toString().equals("this"))
-            value = thisLocal;
-
         ConstraintVariable retVariable = variableMap.get(value);
         if (retVariable == null) {
             retVariable = new ConstraintVariable(value);
+            tempVarSet.add(retVariable);
             variableMap.put(value, retVariable);
         }
 
         return retVariable;
+    }
+
+    public Set<ConstraintVariable> getTempVarSet() {
+        return tempVarSet;
+    }
+
+    public void setTempVarSet(Set<ConstraintVariable> tempVarSet) {
+        this.tempVarSet = tempVarSet;
+    }
+
+    public void clearTempVariable() {
+        for (ConstraintVariable variable : tempVarSet)
+            clearTempVariable(variable);
+    }
+
+    private void clearTempVariable(ConstraintVariable clearedVar) {
+        Set<Local> keySet = variableMap.keySet();
+        Iterator<Local> ite = keySet.iterator();
+        while (ite.hasNext()) {
+            Local local = ite.next();
+            if (variableMap.get(local) == clearedVar)
+                ite.remove();
+        }
+
+        for (ConstraintVariable variable : variableMap.values()) {
+            Set<BasicConstraintGraphNode> predKeySet = variable.getPreds().keySet();
+            if (predKeySet.contains(clearedVar))
+                predKeySet.remove(clearedVar);
+            Set<BasicConstraintGraphNode> succKeySet = variable.getSuccs().keySet();
+            if (succKeySet.contains(clearedVar))
+                succKeySet.remove(clearedVar);
+        }
     }
 
     public Map<ConstraintConstructor, Set<ConstraintAnnotation>> getLS(ConstraintVariable variable) {
@@ -87,7 +111,7 @@ public class ConstraintGraph {
 
     public void addToGraph(BasicConstraintGraphNode pred, BasicConstraintGraphNode succ, ConstraintAnnotation annotation) {
         // clear LS result after changing the constraint graph
-        if(!LSMap.keySet().isEmpty())
+        if (!LSMap.keySet().isEmpty())
             LSMap.clear();
 
         if (pred instanceof ConstraintVariable) {
@@ -142,9 +166,9 @@ public class ConstraintGraph {
         Map<BasicConstraintGraphNode, Set<ConstraintAnnotation>> succs = variable.getSuccs();
         for (BasicConstraintGraphNode succ : succs.keySet()) {
             Set<ConstraintAnnotation> succAnnotationSet = succs.get(succ);
-                for (ConstraintAnnotation succAnnotation : succAnnotationSet) {
-                    trans(pred, predAnnotation, succ, succAnnotation);
-                }
+            for (ConstraintAnnotation succAnnotation : succAnnotationSet) {
+                trans(pred, predAnnotation, succ, succAnnotation);
+            }
         }
     }
 
@@ -162,5 +186,4 @@ public class ConstraintGraph {
         }
         return newAnnotation;
     }
-
 }

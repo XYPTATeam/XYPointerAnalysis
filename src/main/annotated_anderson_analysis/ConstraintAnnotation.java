@@ -40,4 +40,11 @@ public class ConstraintAnnotation {
         return newAnnotation;
     }
 
+    @Override
+    public String toString() {
+        if (this == EMPTY)
+            return "EMPTY";
+        return fieldRef.toString();
+    }
+
 }

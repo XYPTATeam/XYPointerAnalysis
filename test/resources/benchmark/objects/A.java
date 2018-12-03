@@ -1,7 +1,5 @@
 package benchmark.objects;
 
-import benchmark.objects.B;
-
 public class A {
 
     // Object A with attributes of type B
@@ -15,9 +13,9 @@ public class A {
 //	public B h;
 
 
-	public A(B b) {
-		this.f = b;
-	}
+    public A(B b) {
+        this.f = b;
+    }
 //
 //	public B getF() {
 //		return f;

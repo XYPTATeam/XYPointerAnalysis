@@ -28,4 +28,9 @@ public class ConstraintObjectConstructor extends ConstraintConstructor {
         return this.objectVariable;
     }
 
+    @Override
+    public String toString() {
+        return id + ": " + refType;
+    }
+
 }

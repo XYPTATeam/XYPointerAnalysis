@@ -12,6 +12,7 @@ public class ConstraintVariable extends BasicConstraintGraphNode {
     private static int nextVariableOrder = 0;
     private static final int OBJECT_ORDER_OFFSET = 100000;
     private static final int FRESH_ORDER_OFFSET = 200000;
+    private static final int THIS_ORDER_OFFSET = -100000;
 
     private Local local;
     private int order;
@@ -31,7 +32,8 @@ public class ConstraintVariable extends BasicConstraintGraphNode {
             order = OBJECT_ORDER_OFFSET + nextVariableOrder++;
         } else if (constructMode == 2) { // fresh variable
             order = FRESH_ORDER_OFFSET + nextVariableOrder++;
-        }
+        } else if (constructMode == 3)
+            order = THIS_ORDER_OFFSET + nextVariableOrder++;
         preds = new HashMap<>();
         succs = new HashMap<>();
     }
@@ -70,5 +72,10 @@ public class ConstraintVariable extends BasicConstraintGraphNode {
         }
 
         succSet.add(annotation);
+    }
+
+    @Override
+    public String toString() {
+        return order + ": " + local;
     }
 }
