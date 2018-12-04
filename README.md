@@ -97,3 +97,12 @@ src
 
 ## 4. How to use
 
+In command line or terminal:
+
+```powershell
+java –jar analyzer.jar [src][SomePackage.Main]
+```
+
+- \[src\]: root path of  project to analysis, including java, class files and rt.jar, jce.jar in Java 1.7 (depended by Soot).
+
+- \[SomePackage.Main\]: main class of project, including main function.

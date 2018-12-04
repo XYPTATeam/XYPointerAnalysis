@@ -377,11 +377,11 @@
     <property name="SearchEverywhereHistoryKey" value="Constraing&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/ConstraintGraph.java&#10;Po&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/PointerAnalysisTransformer.java&#10;Con&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java&#10;ConstraintAnn&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/ConstraintAnnotation.java&#10;TestA&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/test/main/TestAssign.java&#10;ConstraintO&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/constraint_graph_node/ConstraintObjectConstructor.java&#10;Conver&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/src/main/annotated_anderson_analysis/ConstraintConvertUtility.java&#10;Method&#9;FILE&#9;jar://C:/Ubuntu_Share/XYPointerAnalysis/lib/sootclasses-trunk-sources.jar!/soot/SootMethod.java&#10;Assign.java&#9;FILE&#9;file://C:/Ubuntu_Share/XYPointerAnalysis/test/resources/Assign.java&#10;print_cfg&#9;PSI&#9;JAVA://soot.tools.CFGViewer#print_cfg&#10;DrawCfg&#9;PSI&#9;JAVA://soot.util.cfgcmd.CFGToDotGraph#drawCFG&#10;CFGBuild&#9;PSI&#9;JAVA://polyglot.visit.CFGBuilder&#10;CFG&#9;PSI&#9;JAVA://soot.coffi.CFG#cfg&#10;PointerAnalysis&#9;PSI&#9;JAVA://soot.jimple.toolkits.pointer.DumbPointerAnalysis" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543908318122" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543908470672" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/sootclasses-trunk-sources.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
