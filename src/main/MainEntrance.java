@@ -1,25 +1,19 @@
-import deprecated.WholeProgramTransformer;
 import soot.PackManager;
 import soot.Transform;
 
-import java.io.File;
-
 public class MainEntrance {
     public static void main(String[] args) {
-        String classpath = args[0] + "rt.jar" + File.pathSeparator
-                + args[0] + "jce.jar" + File.pathSeparator
-                + args[1];
-        System.out.println(args[0]);
-        System.out.println(args[1]);
-        System.out.println(args[2]);
-        System.out.println(classpath);
-        PackManager.v().getPack("wjtp").add(new Transform("wjtp.mypta", new WholeProgramTransformer()));
-        soot.Main.main(new String[]{
-                "-w",
-                "-p", "cg.spark", "enabled:true",
-                "-p", "wjtp.mypta", "enabled:true",
-                "-soot-class-path", classpath,
-                args[2]
-        });
+        PackManager.v().getPack("wjtp").add(
+                new Transform("wjtp.myTransform", new PointerAnalysisTransformer()));
+
+        String[] sootArgs = new String[5];
+        String testDir = args[0];
+        String testClass = args[1];
+        sootArgs[0] = "-w";
+        sootArgs[1] = "-pp";
+        sootArgs[2] = "-cp";
+        sootArgs[3] = testDir;
+        sootArgs[4] = testClass;
+        soot.Main.main(sootArgs);
     }
 }

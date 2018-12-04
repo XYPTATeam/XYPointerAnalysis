@@ -8,6 +8,9 @@ import soot.*;
 import soot.jimple.*;
 import soot.jimple.internal.JimpleLocal;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.*;
 
 public class ConstraintConvertUtility {
@@ -23,23 +26,36 @@ public class ConstraintConvertUtility {
             convertFromStmt(u, null, paramList, new HashSet<>(), constraintGraph);
         }
 
-        for (Integer idx : queries.keySet()) {
-            Local testLocal = queries.get(idx);
-            ConstraintVariable testVar = constraintGraph.getFromVariableMap(testLocal);
-            Map<ConstraintConstructor, Set<ConstraintAnnotation>> resMap = constraintGraph.getLS(testVar);
+        // print result
+        try {
+            PrintStream ps = new PrintStream(new FileOutputStream("result.txt"));
+            for (Integer idx : queries.keySet()) {
+                Local testLocal = queries.get(idx);
+                ConstraintVariable testVar = constraintGraph.getFromVariableMap(testLocal);
+                Map<ConstraintConstructor, Set<ConstraintAnnotation>> resMap = constraintGraph.getLS(testVar);
 
-            // TODO: print result
-            System.out.println(testLocal + ": {");
-            for (ConstraintConstructor constructor : resMap.keySet()) {
-                Set<ConstraintAnnotation> resAnnoSet = resMap.get(constructor);
-                System.out.print(constructor + "--[");
-                for (ConstraintAnnotation annotation : resAnnoSet) {
-                    System.out.print(annotation + ", ");
+                // TODO: print result
+                ps.print("Query " + idx + " (" + testLocal + ") " + "-- {");
+                for (ConstraintConstructor constructor : resMap.keySet()) {
+                    Set<ConstraintAnnotation> resAnnoSet = resMap.get(constructor);
+                    boolean printFlag = false;
+                    for (ConstraintAnnotation annotation : resAnnoSet) {
+//                        ps.print(annotation + ", ");
+                        if (annotation == ConstraintAnnotation.EMPTY) {
+                            printFlag = true;
+                            break;
+                        }
+                    }
+                    if (printFlag)
+                        ps.print(constructor + ", ");
+//                    ps.println("]");
                 }
-                System.out.println("]");
+                ps.println("}");
             }
-            System.out.println("}");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
+
     }
 
     public static Set<Local> analysisInFuncInvoke(InvokeExpr invokeExpr, ConstraintGraph constraintGraph) {
