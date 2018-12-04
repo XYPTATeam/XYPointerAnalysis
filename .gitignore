@@ -3,9 +3,12 @@
 # Compiled class file
 *.class
 
-# VS Code #
+# VS Code
 .vscode
 
+# output
+out/
+sootOutput/
 
 # Log file
 *.log
